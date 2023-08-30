@@ -1,0 +1,37 @@
+EX: 1
+
+= {F,M}
+
+T= {0,1,2}
+
+P= { F --> M ,  F --> FM, M --> (0,1,2)
+
+S= F
+
+EX: 2
+
+S - NP  VP
+NP - Det N
+NP - N
+VP - V NP 
+Det - o
+N - gato/cachorro
+V - persegue/late
+
+PASSO 1 = S --> NP VP 
+
+PASSO 2 = NP VP --> DET N VP
+
+PASSO 3 = DET N VP -> 'O' N VP
+
+PASSO 4 = 'O' N VP -> 'O' 'GATO' VP
+
+PASSO 5 = 'O' 'GATO' VP -> 'O' 'GATO' V NP 
+
+PASSO 6 = 'O' 'GATO' V NP -> O GATO V DET N
+
+PASSO 7= 'O' 'GATO' V DET N -> 'O' 'GATO' V O N
+
+PASSO 8= 'O' 'GATO' V O N -> 'O' 'GATO' V 'O' 'CACHORRO'
+
+PASSO 9= O GATO PERSEGUE O CACHORRO 
